@@ -1,0 +1,27 @@
+.container {
+    background-color: bisque;
+    border: 1px solid wheat;
+    display: flex;
+    flex-direction: row;
+}
+.container > ul {
+    margin-left: 20px;
+    font-size: 1.2em;
+    list-style-type: none;
+}
+.container li {
+    display: inline;
+    margin: 20px;
+    padding: 20px;
+}
+.container li:hover {
+    cursor: pointer;
+    background-color: honeydew;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.active {
+    background-color: honeydew;
+}

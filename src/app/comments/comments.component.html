@@ -1,0 +1,16 @@
+
+<div class="review" *ngFor="let comment of commentData" (click)="markedDiv(comment)" [class.selectedComment]="comment === isItActive(comment)">
+  <h3>{{comment.destination}}</h3>
+  <p>{{comment.comment}}<br/><br/>Recension av: <span class="userName">{{comment.user}}</span></p>
+  <button (click)="removeListComment(comment)">Ta bort</button>
+</div>
+
+<div class="newReview">
+    <select [(ngModel)]="newDestinationReview">
+      <option *ngFor="let destination of destinations" [value]="destination">{{destination}}</option>
+    </select><br/>
+    <textarea [(ngModel)]="newReview" placeholder="Berätta om din resa." cols="30" rows="10"></textarea><br/>
+    <input [(ngModel)]="newUserReview" placeholder="Namn"/><br/>
+    <button (click)="addReview()">Skicka recension</button>
+</div>
+

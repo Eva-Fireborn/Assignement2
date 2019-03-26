@@ -1,0 +1,22 @@
+<div class="header">
+  <h1>
+    Dreamaway.com
+  </h1>
+  <h2>
+    Resmål
+  </h2>
+</div>
+
+  <app-child-travel _nghost-pmm-5
+    *ngFor = "let destination of travelData" [class.selected]="destination === selectedTravel"
+    [travelData] = 'destination' (onAction)="handleAction($event)"></app-child-travel>
+
+<div *ngIf='selectedTravel.destination'>
+  <h1>{{selectedTravel.destination}}</h1>
+  <img [src]="selectedTravel.picture" class="travelPic">
+  <p>{{selectedTravel.information}}</p>
+  <p>Transport: {{selectedTravel.transportation}}</p> 
+</div>
+<div class="comments">
+  <app-comments></app-comments>
+</div>

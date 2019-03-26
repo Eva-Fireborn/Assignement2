@@ -1,0 +1,29 @@
+.userName {
+    font-weight: bold;
+}
+.review {
+    border: 1px solid black;
+    width: 50%;
+    padding: 10px;
+    padding-top: 0px;
+    height: 70px;
+    overflow: hidden;
+}
+.newReview {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.review > h3 {
+    margin-top: 5px;
+}
+.review > button {
+    visibility: hidden;
+}
+.selectedComment {
+    background-color: bisque;
+    height: 160px;
+    overflow: auto;
+}
+.selectedComment > button {
+    visibility: visible;
+}

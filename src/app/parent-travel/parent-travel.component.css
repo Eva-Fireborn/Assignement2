@@ -1,0 +1,14 @@
+.travelPic{
+    width: 400px;
+}
+.selected {
+    background-color: lightpink;
+}
+.header {
+    background-color: bisque;
+    margin-top: 0px;
+    height: 100px;
+}
+.header h1 {
+    margin: 0px;
+}

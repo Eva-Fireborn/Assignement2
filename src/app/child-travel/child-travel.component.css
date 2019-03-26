@@ -1,0 +1,10 @@
+div {
+    color: black;
+    display: inline;
+    margin-left: 50px;
+    font-size: 2em;
+}
+div:hover {
+    cursor: pointer;
+    background-color: lightpink;
+}
